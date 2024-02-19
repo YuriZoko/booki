@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -13,56 +14,51 @@
     color: var(--main-color);
 }
 
-/*HEADER*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-	width: 100%;
-	height: 79px;
+    width: 100%;
+    height: 79px;
 }
 
-header .logo {
+.logo {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 161.09px;
     height: 79px;
 }
 
-header .logo img {
+.logo img {
     width: 61.09px;
     height: 19px;
 }
 
-header .nav {
-    position: absolute;
+.nav {
     display: flex;
-    gap: 68px;
-    padding-left: 50px;
-    top: 0;
-    right: 0;
-    width: 294px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
     height: 35px;
 }
 
-header .nav a {
-    margin: auto;
-    display: flex;
-    position: relative;
+.nav a {
     color: black;
-    align-items: flex-end;
+    position: relative;
+    margin-left: 70px;
     height: 100%;
 }
 
-header .nav a:hover {
+.nav a:hover {
     color: var(--main-color);
 }
 
-header .nav a::before {
+.nav a::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -22px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -70,7 +66,7 @@ header .nav a::before {
     transition: background-color 0.3s;
 }
 
-header .nav a:hover::before {
+.nav a:hover::before {
     background-color: var(--main-color);
 }
 
@@ -143,7 +139,7 @@ footer {
     background-color: var(--main-bg-color);
     display: flex;
     align-items: center;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px 15px 15px 15px;
     border: 1px;
     width: 377px;
     height: 49px;
@@ -153,13 +149,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 15%;
     height: 49px;
 }
 
 .search-main-form {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .search-main i {
@@ -177,7 +174,7 @@ footer {
     border: none;
     padding: 0 20px;
     gap: 24px;
-    width: 155px;
+    width: 100%;
     height: 47px;
     font-weight: 700;
     font-size: 18px;
@@ -192,7 +189,6 @@ footer {
     border-radius: 0 15px 15px 0;
     padding: 15px 16px 15px 16px;
     gap: 10px;
-    width: 132px;
     height: 49px;
     font-weight: 700;
     font-size: 18px;
@@ -232,6 +228,7 @@ footer {
 .filter-main-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     box-sizing: border-box;
     border-radius: 25px;
@@ -256,7 +253,7 @@ footer {
 .info-main {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin: 20px 0;
     gap: 10px;
     height: 24px;
 }
@@ -294,6 +291,7 @@ a {
 .section-subtitle {
     font-size: 18px;
     font-weight: 700;
+    margin-top: 20px;
 }
 
 .card {
@@ -451,7 +449,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-    white-space: nowrap;
 }
 
 .activities-cards-row {
@@ -476,7 +473,8 @@ a {
 }
 
 .activities-cards .card-content {
-    width: 67%;
+    margin: 15px 0;
+    width: 100%;
     padding-left: 15px;
     display: flex;
 }
@@ -570,10 +568,9 @@ a {
         flex-direction: column;
         width: 100%;
         height: 115px;
-
     }
     
-    header .logo {
+    .logo {
         order: 1;
         display: flex;
         align-items: center;
@@ -582,7 +579,7 @@ a {
         height: 100%;
     }
 
-    header .nav {
+    .nav {
         order: 2;
         position: relative;
         display: flex;
@@ -595,8 +592,16 @@ a {
         padding: 0;
     }
 
-    
-    header .nav a::before {
+    .nav a {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        position: relative;
+    }
+
+    .nav a::before {
         content: ' ';
         position: absolute;
         top: auto;
@@ -625,21 +630,6 @@ a {
         font-size: 14px;
     }
     
-    .search-main {
-        width: 100%;
-    }
-
-    .search-main-startbar {
-        width: 20%;
-    }
-
-    .search-main-bar {
-        width: 100%;
-    }
-    .search-main-endbar {
-        width: 20%;
-    }
-
     .search-main-endbar span {
         display: none;
     }
@@ -654,8 +644,7 @@ a {
 
     .info-main {
         order: 1;
-        margin-top: 9rem;
-        margin-bottom: 2rem;
+        margin-top: 8rem;
     }
     
     .section-title {
@@ -681,6 +670,7 @@ a {
     }
 
     .hebergements-and-populaires section {
+        margin: 0;
         padding: 20px;
     }
 
