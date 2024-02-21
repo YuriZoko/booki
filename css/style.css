@@ -223,6 +223,7 @@ footer {
 .filter-main-items {
     display: flex;
     gap: 15px;
+    width: 100%;
 }
 
 .filter-main-item {
@@ -628,6 +629,10 @@ a {
 
     .info-main-txt {
         font-size: 14px;
+    }
+
+    .search-main {
+        width: 100%;
     }
     
     .search-main-endbar span {
