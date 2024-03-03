@@ -98,7 +98,7 @@ footer {
 }
 
 .footer-title {
-    font-size: 18x;
+    font-size: 18px;
     font-weight: 700;
     margin-top: 0;
 }
@@ -178,7 +178,6 @@ footer {
     height: 47px;
     font-weight: 700;
     font-size: 18px;
-    font-style: black;
 }
 
 .search-main-endbar {
